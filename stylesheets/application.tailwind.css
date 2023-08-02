@@ -13,3 +13,49 @@
 .docs main section h2 {
   @apply mt-12 scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight first:mt-0;
 }
+
+article.documentation h1 {
+  @apply scroll-m-20 text-4xl font-bold tracking-tight;
+}
+
+article.documentation p + h1 {
+  @apply mt-12;
+}
+article.documentation h2 {
+  @apply scroll-m-20 text-3xl font-bold tracking-tight my-8;
+}
+
+article.documentation h3 {
+  @apply scroll-m-20 text-2xl font-bold tracking-tight my-4;
+}
+
+article.documentation h4 {
+  @apply scroll-m-20 text-xl font-bold tracking-tight my-2;
+}
+
+article.documentation subtitle {
+  @apply text-lg;
+}
+article.documentation p {
+  @apply leading-7 [&:not(:first-child)]:mt-6;
+}
+
+article.documentation :where(code):not(:where([class~="not-prose"] *)):before {
+  content: "";
+}
+
+article.documentation :where(code):not(:where([class~="not-prose"] *)):after {
+  content: "";
+}
+
+article.documentation p a {
+  @apply underline;
+}
+
+article.documentation pre {
+  @apply max-h-[650px] overflow-x-auto rounded-lg border bg-zinc-950 dark:bg-zinc-900 text-white py-4 px-8 rounded-lg my-4;
+}
+
+article.documentation p > code {
+  @apply text-white bg-black p-1 rounded;
+}
