@@ -766,6 +766,10 @@ select {
   top: 0px;
 }
 
+.top-5 {
+  top: 1.25rem;
+}
+
 .z-30 {
   z-index: 30;
 }
@@ -786,6 +790,16 @@ select {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .-ml-2 {
@@ -950,12 +964,6 @@ select {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1015,6 +1023,11 @@ select {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pb-4 {
@@ -1240,6 +1253,27 @@ article p > code {
     position: sticky;
   }
 
+  .md\:top-5 {
+    top: 1.25rem;
+  }
+
+  .md\:top-7 {
+    top: 1.75rem;
+  }
+
+  .md\:top-10 {
+    top: 2.5rem;
+  }
+
+  .md\:top-12 {
+    top: 3rem;
+  }
+
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1250,6 +1284,11 @@ article p > code {
 
   .md\:justify-end {
     justify-content: flex-end;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
